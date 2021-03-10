@@ -2,6 +2,8 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import './Clock.scss';
 import clockFace from './imgs/clock-face.gif';
+import minuteHand from './imgs/hand1.gif';
+import hourHand from './imgs/hand2.gif';
 
 function Clock() {
 
@@ -28,20 +30,31 @@ function Clock() {
 
     let hourHandStyle = {
         '--rotation': curHour * 360,
-        'transform': 'translateY(-6%) rotate(calc(var(--rotation) * 1deg))'
+        'transform': 'translateY(25%) translateX(-5%) rotate(calc(var(--rotation) * 1deg))',
+        backgroundImage: `url(${hourHand})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
     }
     let minuteHandStyle = {
         '--rotation': curMin * 360,
-        'transform': 'rotate(calc(var(--rotation) * 1deg))'
+        'transform': 'translateY(10%) translateX(15%) rotate(calc(var(--rotation) * 1deg))',
+        backgroundImage: `url(${minuteHand})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
     }
     let secondHandStyle = {
         '--rotation': curSec * 360,
-        'transform': 'rotate(calc(var(--rotation) * 1deg))'
+        'transform': 'translateX(-50%) translateY(10%) rotate(calc(var(--rotation) * 1deg))'
+    }
+    let clockFaceStyle = {
+        backgroundImage: `url(${clockFace})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
     }
     
   return (
     <div className="clock">
-        <div className='circle' style={{backgroundImage: `url(${clockFace})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
+        <div className='circle' style={clockFaceStyle}>
         <div className='num'>XII</div>
         <div className='number1 num'>I</div>
         <div className='number2 num'>II</div>

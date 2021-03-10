@@ -1,3 +1,10 @@
+.clock {
+    position: absolute;
+    transform: scale(2);
+    left: 89%;
+    top: 6%;
+}
+
 .clock .num {
     font-size: small;
     --rotation: 0;
@@ -32,30 +39,28 @@
 }
 @mixin clockHand {
     position: absolute;
-    width: 0px;
     transform-origin: bottom;
-    transform: translateX(-50%);
     z-index: 2;
 
 }
 .hourHand {
     @include clockHand;
-    height: 27px;
-    border: 3px solid black;
-    margin-top: 20px;
+    height: 40px;
+    width: 10px;
 }
 
 .minuteHand {
     @include clockHand;
-    height: 38px;
-    border: 2px solid black;
-    margin-top: 10px;
+    height: 45px;
+    width: 10px;
+    z-index: 0;
 }
 
 .secondHand {
     @include clockHand;
     height: 45px;
-    border: 1px solid red;
+    width: 2px;
+    background-color: rgb(162, 95, 154);
 }
 
 .clockCenter {
