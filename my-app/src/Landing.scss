@@ -1,0 +1,58 @@
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@mixin standardFont {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+}
+
+@mixin boldFont {
+  @include standardFont;
+  font-weight: bold;
+}
+
+@mixin italicFont {
+  @include standardFont;
+  font-style: italic;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  @include standardFont;
+}
+
+.bold {
+  @include boldFont;
+}
+.italic {
+  @include italicFont;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indent {
+  text-indent: 5%;
+}
