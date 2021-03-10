@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import './Clock.scss';
+import clockFace from './imgs/clock-face.gif';
 
 function Clock() {
 
@@ -40,19 +41,19 @@ function Clock() {
     
   return (
     <div className="clock">
-        <div className='circle'>
-        <div className='num'>12</div>
-        <div className='number1 num'>1</div>
-        <div className='number2 num'>2</div>
-        <div className='number3 num'>3</div>
-        <div className='number4 num'>4</div>
-        <div className='number5 num'>5</div>
-        <div className='number6 num'>6</div>
-        <div className='number7 num'>7</div>
-        <div className='number8 num'>8</div>
-        <div className='number9 num'>9</div>
-        <div className='number10 num'>10</div>
-        <div className='number11 num'>11</div>
+        <div className='circle' style={{backgroundImage: `url(${clockFace})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
+        <div className='num'>XII</div>
+        <div className='number1 num'>I</div>
+        <div className='number2 num'>II</div>
+        <div className='number3 num'>III</div>
+        <div className='number4 num'>IV</div>
+        <div className='number5 num'>V</div>
+        <div className='number6 num'>VI</div>
+        <div className='number7 num'>VII</div>
+        <div className='number8 num'>VIII</div>
+        <div className='number9 num'>IX</div>
+        <div className='number10 num'>X</div>
+        <div className='number11 num'>XI</div>
         <div className='hourHand' style={hourHandStyle}/>
         <div className='minuteHand' style={minuteHandStyle}/>
         <div className='secondHand' style={secondHandStyle}/>

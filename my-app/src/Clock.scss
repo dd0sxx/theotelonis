@@ -7,6 +7,7 @@
     margin-top: -6.5px;;
     text-align: center;
     transform: rotate(var(--rotation));
+    letter-spacing: -1pt;
 }
 .clock .number1 { --rotation: 30deg;}
 .clock .number2 { --rotation: 60deg;}
