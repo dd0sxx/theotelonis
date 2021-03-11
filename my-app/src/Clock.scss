@@ -1,17 +1,19 @@
-.clock {
+.clockFrame {
     position: absolute;
-    transform: scale(2);
-    left: 89%;
-    top: 6%;
+    width: 165px;
+    height: 165px;
+    z-index: 0;
+    left: -32px;
+    top: -1px;
 }
 
 .clock .num {
-    font-size: small;
+    font-size: 8pt;
     --rotation: 0;
     position: absolute;
     width: 115px;
     height: 115px;
-    margin-top: -6.5px;;
+    margin-top: -6.5px;
     text-align: center;
     transform: rotate(var(--rotation));
     letter-spacing: -1pt;

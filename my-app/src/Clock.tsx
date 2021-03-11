@@ -4,13 +4,14 @@ import './Clock.scss';
 import clockFace from './imgs/clock-face.gif';
 import minuteHand from './imgs/hand1.gif';
 import hourHand from './imgs/hand2.gif';
+import frame from './imgs/frame.png';
 
 function Clock() {
 
     let [curTime , setCurTime] = useState<Date>(new Date())
     let [curSec , setCurSec] = useState<number>((curTime.getSeconds() / 60));
     let [curMin , setCurMin] = useState<number>((curTime.getMinutes()) / 60);
-    let [curHour , setCurHour] = useState<number>((curMin + curTime.getHours()) / 12);
+    let [curHour , setCurHour] = useState<number>((curTime.getHours()) / 12);
     
     useEffect(() => {
         const timer = setInterval(() => {
@@ -30,14 +31,14 @@ function Clock() {
 
     let hourHandStyle = {
         '--rotation': curHour * 360,
-        'transform': 'translateY(25%) translateX(-5%) rotate(calc(var(--rotation) * 1deg))',
+        'transform': 'translateY(25%) translateX(-5%) rotate(calc(var(--rotation) * 1deg + 5deg))',
         backgroundImage: `url(${hourHand})`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat'
     }
     let minuteHandStyle = {
         '--rotation': curMin * 360,
-        'transform': 'translateY(10%) translateX(15%) rotate(calc(var(--rotation) * 1deg))',
+        'transform': 'translateY(14%) translateX(10%) rotate(calc(var(--rotation) * 1deg + 4deg))',
         backgroundImage: `url(${minuteHand})`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat'
@@ -51,9 +52,15 @@ function Clock() {
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat'
     }
+    let frameStyle = {
+        backgroundImage: `url(${frame})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat'
+    }
     
   return (
-    <div className="clock">
+    <div className="clock" >
+    {/* <div className="clockFrame" style={frameStyle} /> */}
         <div className='circle' style={clockFaceStyle}>
         <div className='num'>XII</div>
         <div className='number1 num'>I</div>

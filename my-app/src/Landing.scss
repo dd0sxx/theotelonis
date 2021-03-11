@@ -1,24 +1,15 @@
 body {
   margin: 2%;
+  overflow-x: hidden;
 }
 
 @mixin standardFont {
-  font-family: "PT Serif";
+  font-family: Garamond, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: #000000;
-}
-
-@mixin boldFont {
-  @include standardFont;
-  font-weight: bold;
-}
-
-@mixin italicFont {
-  @include standardFont;
-  font-style: italic;
 }
 
 .App {
@@ -30,19 +21,65 @@ body {
   @include standardFont;
 }
 
-.bold {
-  @include boldFont;
+@mixin boldFont {
+  @include standardFont;
+  font-weight: bolder;
 }
+
+@mixin italicFont {
+  @include standardFont;
+  font-style: italic;
+}
+
 .italic {
   @include italicFont;
 }
 
 .header-flex {
   display: flex;
-  width: 75vw;
+  width: 100%;
   justify-content: space-between;
 }
 
 .indent {
   text-indent: 5%;
 }
+
+.logo-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 10%;
+}
+
+nav {
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 10vw;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+nav div:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.bold {
+  @include boldFont;
+}
+
+.headerText {
+  max-width: 70%;
+  // margin-right: 15%;
+  // margin-left: 5%;
+}
+
