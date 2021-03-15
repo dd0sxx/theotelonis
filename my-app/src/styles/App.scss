@@ -1,0 +1,130 @@
+body {
+  margin: 2%;
+  overflow-x: hidden;
+}
+
+@mixin standardFont {
+  font-family: Garamond, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  @include standardFont;
+}
+
+@mixin boldFont {
+  @include standardFont;
+  font-weight: bolder;
+}
+
+@mixin italicFont {
+  @include standardFont;
+  font-style: italic;
+}
+
+.italic {
+  @include italicFont;
+}
+
+.header-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.indent {
+  text-indent: 5%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.logo {
+  margin-bottom: 10%;
+}
+
+nav {
+  margin-top: 2%;
+  margin-bottom: 25%;
+  margin-left: 1%;
+  width: 10vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+nav div:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.bold {
+  @include boldFont;
+}
+
+.headerText {
+  width: 90vw;
+  text-justify: auto;
+  text-align: left;
+  // margin-right: 15%;
+  // margin-left: 5%;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: 20vh;
+    margin: auto;
+  }
+
+  .nav nav {
+    width: 40vw;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  .nav nav ul {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0%;
+  }
+  .clock {
+    height: 50%;
+    margin-top: 5vh;
+  }
+  .logo {
+    min-width: 100px;
+    transform: scale(0.75);
+  }
+  .header-flex {
+    flex-direction: column;
+  }
+
+}

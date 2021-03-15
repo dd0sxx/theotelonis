@@ -1,10 +1,10 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
-import './Clock.scss';
-import clockFace from './imgs/clock-face.gif';
-import minuteHand from './imgs/hand1.gif';
-import hourHand from './imgs/hand2.gif';
-import frame from './imgs/frame.png';
+import '../styles/Clock.scss';
+import clockFace from '../imgs/clock-face.gif';
+import minuteHand from '../imgs/hand1.gif';
+import hourHand from '../imgs/hand2.gif';
+import frame from '../imgs/frame.png';
 
 function Clock() {
 

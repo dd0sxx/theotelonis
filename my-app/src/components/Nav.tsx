@@ -1,5 +1,8 @@
 import React from 'react'; 
-import logo from './imgs/tt1.gif';
+import logo from '../imgs/tt1.gif';
+import Clock from './Clock';
+import { NavLink } from "react-router-dom";
+import About from './About';
 
 function Nav () {
 
@@ -12,16 +15,47 @@ function Nav () {
       }
 
 return (
-    <div className='logo-nav'>
+    <div className='nav'>
+        <NavLink
+        exact to='/' activeClassName="selected">
         <div className='logo' style={logoStyle} />
+        </NavLink>
         <nav>
-            <a href='/about'>About</a>
-            <a href='#'>Site</a>
-            <hr></hr>
-            <a href='#'>Programming</a>
-            <a href='#'>Music</a>
-            <a href='#'>Fine Art</a>
+            <ul>
+                <li>
+                    <NavLink
+                    exact to='/about' activeClassName="selected">
+                        <a>About</a>
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                     exact to='/site' activeClassName="selected">
+                        <a>Site</a>
+                    </NavLink>
+                </li>
+                <hr></hr>
+                <li>
+                    <NavLink
+                    exact to='/programming' activeClassName="selected">
+                        <a>Programming</a>
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                    exact to='/music' activeClassName="selected">
+                        <a href='#'>Music</a>
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                    exact to='/fineart' activeClassName="selected">
+                        <a href='#'>Fine Art</a>
+                    </NavLink>
+                </li>
+            </ul>
         </nav>
+        <Clock />
     </div>
 )
 }
