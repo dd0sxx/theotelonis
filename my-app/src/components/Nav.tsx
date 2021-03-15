@@ -7,8 +7,8 @@ import About from './About';
 function Nav () {
 
     let logoStyle = {
-        width: '20vw', 
-        height: '20vh', 
+        // width: '20vw', 
+        // height: '20vh', 
         backgroundImage: `url(${logo})`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
