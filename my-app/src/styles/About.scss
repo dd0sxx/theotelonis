@@ -1,0 +1,37 @@
+.toc {
+    list-style: none;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid lightgray;
+    width: 10vw;
+    text-align: left;
+    padding: 5px;
+}
+
+
+.toc-num {
+    color: gray;
+}
+
+.toc-lvl1 {
+    font-weight: bolder;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-article {
+    margin-left: 2%;
+}
+
+.about-article p {
+}
+
+.about-header {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.toc a {
+    text-decoration: none;
+}
