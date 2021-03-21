@@ -16,6 +16,8 @@ function About () {
                         <a href='#personality'><li className='toc-lvl1'><span className='toc-num'>4 </span>Personality</li></a>
                     </ol>
                 </aside>
+                <div className='content-body
+                '></div>
                 <h2 className='about-header' id='who-am-i'>Who Am I?</h2> <hr/>
                     <p>I am an artist, musician, programmer, student, and more based in Brooklyn, New York. I am not well known for anything particular quite yet, however, I am using this site to document my creations and other musings so that maybe one day I will be.</p>
                 <h3 className='about-header' id='what-do-i-do'>What do I do?</h3> <hr/>
