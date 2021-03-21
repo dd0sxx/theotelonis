@@ -4,13 +4,9 @@
     border: 1px solid lightgray;
     width: 10vw;
     text-align: left;
-
+    padding: 5px;
 }
- h1 {
-     font-size: 36pt;
-     font-weight: bolder;
-     text-align: center;
- }
+
 
 .toc-num {
     color: gray;
@@ -20,25 +16,18 @@
     font-weight: bolder;
 }
 
-.about-content {
-    // display: flex;
-    // flex-wrap:inherit;
-    width: 100%;
+.site-content {
+    display: flex;
 }
 
-aside { 
-    float: left;
-}
-
-.about-content * {
-    border: 2px solid pink;
-}
-
-.about-article {
+.site-article {
     margin-left: 2%;
 }
 
-.about-header {
+.site-article p {
+}
+
+.site-header {
     font-weight: bold;
     font-size: 20pt;
 }

@@ -3,12 +3,14 @@ import '../styles/App.scss';
 import Nav from './Nav';
 import Clock from './Clock';
 import About from './About';
+import site from './Site';
 import Home from './Home';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import Site from './Site';
 
 function App() {
   return (
@@ -23,6 +25,9 @@ function App() {
               </Route>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/site">
+                <Site />
               </Route>
             </Switch>
           </div>
