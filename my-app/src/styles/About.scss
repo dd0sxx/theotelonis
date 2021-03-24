@@ -4,11 +4,11 @@
     border: 1px solid lightgray;
     width: 10vw;
     text-align: left;
+    margin: 0% 0% 0% 0%;
 
 }
- h1 {
-     font-size: 36pt;
-     font-weight: bolder;
+ .article-title {
+     font-size: 32pt;
      text-align: center;
  }
 
@@ -28,10 +28,11 @@
 
 aside { 
     float: left;
+    margin-right: 2%;
 }
 
 .about-content * {
-    border: 2px solid pink;
+    // border: 2px solid pink;
 }
 
 .about-article {
@@ -39,8 +40,24 @@ aside {
 }
 
 .about-header {
-    font-weight: bold;
     font-size: 20pt;
+    display: block;
+    margin: 0% 0% 0% 0%;
+}
+
+.about-sub-header {
+    font-size: 14pt;
+    display: block;
+    margin: 16px 0% 16px 40px;
+}
+
+
+.content-body p {
+    display: block;
+}
+
+.content-body hr {
+    position: absolute;
 }
 
 .toc a {
