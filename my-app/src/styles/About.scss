@@ -2,22 +2,48 @@
     list-style: none;
     background-color: rgb(248, 248, 248);
     border: 1px solid lightgray;
-    width: 10vw;
+    width: 150px;
     text-align: left;
     margin: 0% 0% 0% 0%;
+    padding: 5px;
 
 }
  .article-title {
      font-size: 32pt;
      text-align: center;
+     font-weight: bold;
  }
 
-.toc-num {
+.toc-num-1 {
     color: gray;
+    font-size: 12pt;
+}
+
+.toc-num-2 {
+    color: gray;
+    font-size: 10pt;
+}
+
+.toc-num-3 {
+    color: gray;
+    font-size: 8pt;
 }
 
 .toc-lvl1 {
     font-weight: bolder;
+    font-size: 12pt;
+}
+
+.toc-lvl2 {
+    font-weight: lighter;
+    font-size: 10pt;
+    margin-left: 20px;
+}
+
+.toc-lvl3 {
+    font-weight: lighter;
+    font-size: 8pt;
+    margin-left: 40px;;
 }
 
 .about-content {
@@ -40,17 +66,25 @@ aside {
 }
 
 .about-header {
-    font-size: 20pt;
+    font-size: 18pt;
+    font-weight: bold;
     display: block;
     margin: 0% 0% 0% 0%;
 }
 
 .about-sub-header {
     font-size: 14pt;
+    font-weight: bold;
     display: block;
     margin: 16px 0% 16px 40px;
 }
 
+.about-sub-sub-header {
+    font-size: 12pt;
+    font-weight: bold;
+    display: block;
+    margin: 16px 0% 16px 80px;
+}
 
 .content-body p {
     display: block;
