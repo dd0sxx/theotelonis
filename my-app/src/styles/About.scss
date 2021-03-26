@@ -26,7 +26,7 @@
 
 .toc-num-3 {
     color: gray;
-    font-size: 8pt;
+    font-size: 9pt;
 }
 
 .toc-lvl1 {
@@ -42,7 +42,7 @@
 
 .toc-lvl3 {
     font-weight: lighter;
-    font-size: 8pt;
+    font-size: 9pt;
     margin-left: 40px;;
 }
 
@@ -50,6 +50,21 @@
     // display: flex;
     // flex-wrap:inherit;
     width: 100%;
+}
+
+.content-body ul {
+    list-style-type: '✦';
+    list-style-position: inside;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content-body ul a {
+    padding-left: 40px;
+    // width: 20vw;
+}
+.content-body ul li {
+    flex: 1 1 160px;
 }
 
 aside { 
@@ -76,14 +91,14 @@ aside {
     font-size: 14pt;
     font-weight: bold;
     display: block;
-    margin: 16px 0% 16px 40px;
+    margin: 16px 0% 16px 0px;
 }
 
 .about-sub-sub-header {
     font-size: 12pt;
     font-weight: bold;
     display: block;
-    margin: 16px 0% 16px 80px;
+    margin: 16px 0% 16px 0px;
 }
 
 .content-body p {
