@@ -57,14 +57,14 @@
     list-style-position: inside;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: flex-start;
 }
 .content-body ul a {
     padding-left: 40px;
     // width: 20vw;
 }
 .content-body ul li {
-    flex: 1 1 160px;
+    flex: 0 0 250px;
 }
 
 aside { 

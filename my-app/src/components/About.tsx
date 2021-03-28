@@ -62,12 +62,26 @@ function About () {
                     <h3 id='software' className='about-sub-header'>Software</h3>
                     <p>Applications, Programs, and pieces of code that I use in a meaningful capacity:</p>
                     <h4 id='tech-stack' className='about-sub-sub-header'>Tech Stack</h4>
-                    <p>I write all my code in <a href='https://en.wikipedia.org/wiki/JavaScript' target='blank'>Javascript</a> and more recently, <a href='https://en.wikipedia.org/wiki/TypeScript' target='blank'>Typescript</a>. Although JS is an amorphous blob of a programming langauge and is the vehicle for hostility and less-than-savoury parts of the modern internet, it was nonetheless my first programming language and something I hold near and dear to my heart. Very few other languages currently stand out to me as something worth learning, however, eventually I plan to learn Python for some machine learning experiments (unless <a href='https://www.tensorflow.org/js' target='blank'>TensorFlow.js</a> is good enough to compete); Haskell is something I would like to learn in the future as well because many of my favorite projects right now run Haskell under the hood (<a href='
+                    <p>I write all my code in <a href='https://en.wikipedia.org/wiki/JavaScript' target='blank'>JavaScript</a> and more recently, <a href='https://en.wikipedia.org/wiki/TypeScript' target='blank'>TypeScript</a>. Although JS is an amorphous blob of a programming langauge and is the vehicle for hostility and less-than-savoury parts of the modern internet, it was nonetheless my first programming language and something I hold near and dear to my heart. Languages I plan to learn in the future: Python for some machine learning experiments (unless <a href='https://www.tensorflow.org/js' target='blank'>TensorFlow.js</a> is good enough to compete); Haskell as well because many of my favorite projects right now run Haskell under the hood (<a href='
                     https://tidalcycles.org/Welcome' target='blank'>TidalCycles</a> for example).<br/>
                     <span style={{'padding': '40px'}}/> I have become very fond of Typescript as it has by far the best static analysis I have seen and prevents so many errors before they happen; in spite of the extra compiling and boilerplate code required to make TS run, it is more than worth it. TS also plays very nicely with <a href='
                     https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='blank'>React.js</a>, my front-end framework of choice. I write servers using the almighty <a href='
                     https://en.wikipedia.org/wiki/Node.js' target='blank'>Node.js</a> with <a href='
-                    https://en.wikipedia.org/wiki/Express.js' target='blank'>Express.js</a>.</p>
+                    https://en.wikipedia.org/wiki/Express.js' target='blank'>Express.js</a>. I prefer MySQL databases, however, I have dabbled in MongoDB.<br/><span style={{'padding': '40px'}}/>My editor of choice is <a href='https://code.visualstudio.com/' target='blank'>Visual Studio Code</a>. Here is a list of extensions that I am currently running:
+                     <ul className='extensions'>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=steoates.autoimport'>Auto Import</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker'>Bracket Pair Colorizer</a></li>
+                        <li><a target='blank' href='https://noware.bandcamp.com/releases'>Docker</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint'>ESLint</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next'>Javascript and TypeScript</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Live Server</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare'>Live Share</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense'>Path Intellisense</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode'>Prettier</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv'>Rainbow CSV</a></li>
+                        <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers'>Remote Containers</a></li>
+                    </ul>
+                    </p>
                     <h4 id='music-software' className='about-sub-sub-header'>Music</h4>
                     <h4 id='other-software' className='about-sub-sub-header'>Other</h4>
                     <h3 id='hardware' className='about-sub-header'>Hardware</h3>
