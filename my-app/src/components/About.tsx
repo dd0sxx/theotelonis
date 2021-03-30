@@ -44,7 +44,7 @@ function About () {
                 </aside>
                 <div className='content-body'>
                 <h2 className='about-header' id='who-am-i'>Who Am I?</h2>
-                    <p>I am an artist, musician, programmer, student based in Brooklyn, New York. I am not well known for anything particular quite yet, however, I am using this site to document my creations and other musings so that maybe one day I will be.</p>
+                    <p>I am an American artist, musician, programmer, student based in Brooklyn, New York. I am not well known for anything particular quite yet, however, I am using this site to document my creations and other musings so that maybe one day I will be.</p>
                     <h3 id='wesbites' className='about-sub-header'>Websites</h3>
                     <p>Below I have made links to my profiles on various websites. Feel free to peruse these as you wish.</p>
                     <ul className='websites'>
@@ -62,12 +62,13 @@ function About () {
                     <h3 id='software' className='about-sub-header'>Software</h3>
                     <p>Applications, Programs, and pieces of code that I use in a meaningful capacity:</p>
                     <h4 id='tech-stack' className='about-sub-sub-header'>Tech Stack</h4>
+                    <p>Atwood's Law: "Any application that can be written in JavaScript, will eventually be written in JavaScript" - Jeff Atwood</p>
                     <p>I write all my code in <a href='https://en.wikipedia.org/wiki/JavaScript' target='blank'>JavaScript</a> and more recently, <a href='https://en.wikipedia.org/wiki/TypeScript' target='blank'>TypeScript</a>. Although JS is an amorphous blob of a programming langauge and is the vehicle for hostility and less-than-savoury parts of the modern internet, it was nonetheless my first programming language and something I hold near and dear to my heart. Languages I plan to learn in the future: Python for some machine learning experiments (unless <a href='https://www.tensorflow.org/js' target='blank'>TensorFlow.js</a> is good enough to compete); Haskell as well because many of my favorite projects right now run Haskell under the hood (<a href='
                     https://tidalcycles.org/Welcome' target='blank'>TidalCycles</a> for example).<br/>
                     <span style={{'padding': '40px'}}/> I have become very fond of Typescript as it has by far the best static analysis I have seen and prevents so many errors before they happen; in spite of the extra compiling and boilerplate code required to make TS run, it is more than worth it. TS also plays very nicely with <a href='
                     https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='blank'>React.js</a>, my front-end framework of choice. I write servers using the almighty <a href='
                     https://en.wikipedia.org/wiki/Node.js' target='blank'>Node.js</a> with <a href='
-                    https://en.wikipedia.org/wiki/Express.js' target='blank'>Express.js</a>. I prefer MySQL databases, however, I have dabbled in MongoDB.<br/><span style={{'padding': '40px'}}/>My editor of choice is <a href='https://code.visualstudio.com/' target='blank'>Visual Studio Code</a>. Here is a list of extensions that I am currently running:
+                    https://en.wikipedia.org/wiki/Express.js' target='blank'>Express.js</a>. I prefer MySQL databases, however, I have dabbled in MongoDB.<br/><span style={{'padding': '40px'}}/>My IDE of choice is <a href='https://code.visualstudio.com/' target='blank'>Visual Studio Code</a>, however, I am a big fan of the ATOM editor as well. I use ATOM for all of my live coding endevours (Hydra and TidalCycles). Here is a complete list of extensions that I am currently running in VSCode:
                      <ul className='extensions'>
                         <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=steoates.autoimport'>Auto Import</a></li>
                         <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker'>Bracket Pair Colorizer</a></li>
@@ -81,6 +82,9 @@ function About () {
                         <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv'>Rainbow CSV</a></li>
                         <li><a target='blank' href='https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers'>Remote Containers</a></li>
                     </ul>
+                    <span style={{'padding': '40px'}}/> I use Docker to containerize my applications, and deploy them to AWS EC2 instances. Heroku is my go to deployment method for small projects which I don't want to maintain, but would like to look at in a few years for nostalgia. <br/>
+                    <span style={{'padding': '40px'}}/> For operating systems, I actually use Linux, Windows, and MacOS all in some capacity. I have a <a href='#pc'>PC</a> which is running an <a href='FILL ME IN' targer='blank'>deactivated version of Windows 10</a>. On that machine, I have Orcale's <a href='FILL ME IN' target='blank'>Virtual Box</a> running a virtual machine with a Linux Mint distro installed -- this is because I learned to code on UNIX based operating systems and refuse to write code in the Windows environment (I need my bash terminal!!!). In addition to this PC, I have a 2015 MacBook Pro that I have been using for ages which I use when I want to work outside in my backyard or elsewhere. 
+                    {/* ADD A PICTURE OF YOUR BACKYARD HERE */}
                     </p>
                     <h4 id='music-software' className='about-sub-sub-header'>Music</h4>
                     <h4 id='other-software' className='about-sub-sub-header'>Other</h4>
