@@ -96,12 +96,17 @@ function About () {
                     <span style={{'padding': '40px'}}/> I regretfully use <a href='https://rekordbox.com/' target='blank'>Rekordbox</a> software to analyze tracks for DJing. Rekordbox is proprietary software which can analyze a song's bpm, key, and 'energy' for use on Pioneer CDJs. Most of the music I spin comes from the wonderful <a href='http://www.slsknet.org/news/' target='blank'>Soulseek</a>, a peer to peer file sharing network available on all operating systems, as well as records that I have collected over time.
                     </p>
                     <h4 id='other-software' className='about-sub-sub-header'>Other</h4>
-                    <p>My default browser is <a href='https://brave.com/' target='blank'>Brave</a> because it has a built in ad blocker and prevents tracking. In addition to this, Brave also fully integrates <a href='https://www.torproject.org/' target='blank'>Tor</a> into the broswer allowing for signifgnatly more anonymity than the alternative, Chrome's "incognito". Brave has integrated a proof of attention token, BAT, which is an Ethereum based ERC20 token you can earn by opting into non invasive advertisements and simply browsing the web; as a crypto enthusiest I am a big fan of BAT token and enjoy earning BAT token by having it open most of the day.
+                    <p>My default browser is <a href='https://brave.com/' target='blank'>Brave</a> because it has a built in ad blocker and prevents tracking. In addition to this, Brave also fully integrates <a href='https://www.torproject.org/' target='blank'>Tor</a> into the broswer allowing for signifgnatly more anonymity than the alternative, Chrome's "incognito". Brave has integrated a proof of attention token, BAT, which is an Ethereum based ERC20 token you can earn by opting into non invasive advertisements and simply browsing the web; as a crypto enthusiest I am a big fan of BAT token and enjoy earning BAT token by simply having it open most of the day. <br/>
+                    <span style={{'padding': '40px'}}/> I use Notion for notetaking and to do lists; I appreciate that my entries are saved to the cloud and accessible across different machines. This was a problem for me as I used to use apple notes which fragmented my entries across devices. Notion is less of a decision and more of a sensible choice, much like using Slack and Discord for team communications or Telegram and Signal for encrypted messaging; one does not simply use skype or whatsapp in 2021 if you care about the software you are using.
                     </p>
                     <h3 id='hardware' className='about-sub-header'>Hardware</h3>
+                    <p>FILL ME IN</p>
                     <h4 id='computer' className='about-sub-sub-header'>Computer</h4>
+                    <p>FILL ME IN</p>
                     <h4 id='music-hardware' className='about-sub-sub-header'>Music</h4>
-                    <h4 id='other-hardware' className='about-sub-sub-header'>Other</h4>                      
+                    <p>FILL ME IN</p>
+                    <h4 id='other-hardware' className='about-sub-sub-header'>Other</h4>    
+                    <p>FILL ME IN</p>                  
                 <h2 className='about-header' id='personality'>Personality</h2>
                 <h3 id='zodiac' className='about-sub-header'>Zodiac</h3>
                     <p>Here is my Natal Chart, courtesy of <a href='https://www.costarastrology.com/nowvre' target='blank'>Co-Star astrology</a>:</p>
