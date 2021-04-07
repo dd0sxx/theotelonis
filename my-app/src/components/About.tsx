@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Radium from 'radium';
-import Nav from './Nav';
 import '../styles/About.scss';
 const Style = Radium.Style;
 
@@ -39,7 +38,10 @@ function About () {
                                 <a href='#computer'><li className='toc-lvl3'><span className='toc-num-3'>3.2.1 </span>Computer</li></a>
                                 <a href='#music-hardware'><li className='toc-lvl3'><span className='toc-num-3'>3.2.2 </span>Music</li></a>
                                 <a href='#other-hardware'><li className='toc-lvl3'><span className='toc-num-3'>3.2.3 </span>Other</li></a>
-                        <a href='#personality'><li className='toc-lvl1'><span className='toc-num'>4 </span>Personality</li></a>
+                            <a href='#personality'><li className='toc-lvl1'><span className='toc-num'>4 </span>Personality</li></a>
+                                 <a href='#zodiac'><li className='toc-lvl2'><span className='toc-num-2'>4.1 </span>Zodiac</li></a>
+                                 <a href='#myers-briggs'><li className='toc-lvl2'><span className='toc-num-2'>4.1 </span>Myers-Briggs</li></a>
+                                 <a href='#enneagram'><li className='toc-lvl2'><span className='toc-num-2'>4.1 </span>Enneagram</li></a>
                     </ol>
                 </aside>
                 <div className='content-body'>
@@ -63,7 +65,7 @@ function About () {
                     <p>Applications, Programs, and pieces of code that I use in a meaningful capacity:</p>
                     <h4 id='tech-stack' className='about-sub-sub-header'>Tech Stack</h4>
                     <p>Atwood's Law: "Any application that can be written in JavaScript, will eventually be written in JavaScript" - Jeff Atwood</p>
-                    <p>I write all my code in <a href='https://en.wikipedia.org/wiki/JavaScript' target='blank'>JavaScript</a> and more recently, <a href='https://en.wikipedia.org/wiki/TypeScript' target='blank'>TypeScript</a>. Although JS is an amorphous blob of a programming langauge and is the vehicle for hostility and less-than-savoury parts of the modern internet, it was nonetheless my first programming language and something I hold near and dear to my heart. Languages I plan to learn in the future: Python for some machine learning experiments (unless <a href='https://www.tensorflow.org/js' target='blank'>TensorFlow.js</a> is good enough to compete); Haskell as well because many of my favorite projects right now run Haskell under the hood (<a href='
+                    <p>I write all my code in <a href='https://en.wikipedia.org/wiki/JavaScript' target='blank'>JavaScript</a> and more recently, <a href='https://en.wikipedia.org/wiki/TypeScript' target='blank'>TypeScript</a>. Although JS is an amorphous blob of a programming langauge and is the vehicle for hostility and less-than-savoury parts of the modern internet, it was nonetheless my first programming language and something I hold near and dear to my heart. Languages I plan to learn in the future: Python for some machine learning experiments (GANs & SampleRNNs) and Haskell as well because many of my favorite projects right now run Haskell under the hood (<a href='
                     https://tidalcycles.org/Welcome' target='blank'>TidalCycles</a> for example).<br/>
                     <span style={{'padding': '40px'}}/> I have become very fond of Typescript as it has by far the best static analysis I have seen and prevents so many errors before they happen; in spite of the extra compiling and boilerplate code required to make TS run, it is more than worth it. TS also plays very nicely with <a href='
                     https://en.wikipedia.org/wiki/React_(JavaScript_library)' target='blank'>React.js</a>, my front-end framework of choice. I write servers using the almighty <a href='
@@ -101,7 +103,43 @@ function About () {
                     <h4 id='music-hardware' className='about-sub-sub-header'>Music</h4>
                     <h4 id='other-hardware' className='about-sub-sub-header'>Other</h4>                      
                 <h2 className='about-header' id='personality'>Personality</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h3 id='zodiac' className='about-sub-header'>Zodiac</h3>
+                    <p>Here is my Natal Chart, courtesy of <a href='https://www.costarastrology.com/nowvre' target='blank'>Co-Star astrology</a>:</p>
+                    <div className='natal-cols'>
+                        <div className='natal-col-1'>Signs</div>
+                        <div className='natal-col-2'></div>
+                        <div className='natal-col-3'>Houses</div>
+                    </div>
+                    <div className="natal-chart">
+                    <div className="div1">Virgo</div>
+                    <div className="div2">Scorpio</div>
+                    <div className="div3">Sagittarius</div>
+                    <div className="div4">Capricorn</div>
+                    <div className="div5">Aquarius</div>
+                    <div className="div6">Aries</div>
+                    <div className="div7">Taurus</div>
+                    <div className="div8">Ascendant</div>
+                    <div className="div9">Venus</div>
+                    <div className="div10">Sun</div>
+                    <div className="div11">Mercury</div>
+                    <div className="div12">Pluto</div>
+                    <div className="div13">Mars</div>
+                    <div className="div14">Neptune</div>
+                    <div className="div15">Uranus</div>
+                    <div className="div16">Jupiter</div>
+                    <div className="div17">Moon</div>
+                    <div className="div18">Saturn</div>
+                    <div className="div19">1</div>
+                    <div className="div20">3</div>
+                    <div className="div21">4</div>
+                    <div className="div22">5</div>
+                    <div className="div23">6</div>
+                    <div className="div24">9</div>
+                    </div>
+                    <h3 id='meyers-briggs' className='about-sub-header'>Meyers-Briggs</h3>
+                    <p>according to 16personalities.com, I am an INFP-T (turbulent mediator).</p>
+                    <h3 id='enneagram' className='about-sub-header'>Enneagram</h3>
+                    <p>I am type 4</p>
                 </div>
            </div>
         </article>
