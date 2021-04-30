@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
+import extension1 from '../imgs/dapplyticsUx1.jpg'
+import extension2 from '../imgs/dappylticsUX2.jpg'
 
 const UXDesign = () => {
-
     return (
         <div className='site-content'>
         <article className='about-article'>
@@ -37,6 +38,11 @@ const UXDesign = () => {
                     <h2 className='about-header' id='Examples'>Examples</h2>
                     <p>I have provided some examples of my work that I find relevant to my experience as a UX designer in reverse chronological order:</p>
                     <h3 id='ChromeExtension' className='about-sub-header'>Chrome Extension</h3>
+                    <p>Below is a Figma design / flow for a chrome extension I have designed. unfortunately, I had to intentionally obfuscate some details of the design, as the project is not public yet.</p>
+                    <div style={{'display': 'flex', 'flexDirection': 'column', 'alignItems': 'center', 'width': '100%','textAlign': 'center', 'margin':'auto'}}>
+                        <div style={{'textAlign': 'center', 'margin':'0 auto', 'width': '70%','height': '27vh','backgroundImage': `url(${extension1})`, 'backgroundSize': 'contain','backgroundRepeat': 'no-repeat'}} />
+                        <div style={{'textAlign': 'center', 'margin':' 0 auto','width': '75%','height': '27vh','backgroundImage': `url(${extension2})`, 'backgroundSize': 'contain','backgroundRepeat': 'no-repeat'}} />
+                    </div>
                 </div>
            </div>
         </article>
