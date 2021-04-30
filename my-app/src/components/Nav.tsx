@@ -38,19 +38,19 @@ return (
                 <li>
                     <NavLink
                     exact to='/programming' activeClassName="selected">
-                        <a>Programming</a>
+                        <a style={{'textDecoration': 'line-through'}}>Programming</a>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                     exact to='/music' activeClassName="selected">
-                        <a href='#'>Music</a>
+                        <a style={{'textDecoration': 'line-through'}} >Music</a>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
                     exact to='/fineart' activeClassName="selected">
-                        <a href='#'>Fine Art</a>
+                        <a style={{'textDecoration': 'line-through'}}>Fine Art</a>
                     </NavLink>
                 </li>
             </ul>
