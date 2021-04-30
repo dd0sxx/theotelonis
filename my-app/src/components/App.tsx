@@ -5,6 +5,7 @@ import Clock from './Clock';
 import About from './About';
 import site from './Site';
 import Home from './Home';
+import UXDesign from './UXDesign';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +29,9 @@ function App() {
               </Route>
               <Route path="/site">
                 <Site />
+              </Route>
+              <Route path="/uxDesign">
+                <UXDesign />
               </Route>
             </Switch>
           </div>
